@@ -20,6 +20,7 @@ class RuntimeHandler(BaseHTTPRequestHandler):
                 **identity,
                 "listening_host": self.server.server_address[0],
                 "listening_port": self.server.server_address[1],
+                "runtime_note": "v2 source", # 코드가 바꼈을 때의 테스트를 위한 속성값 
             })
         elif path == "/health":
             self.send_json(200, {"status": "alive", **identity})

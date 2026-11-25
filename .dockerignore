@@ -1,0 +1,11 @@
+# Git 이력과 개인 설정은 이미지 빌드에 보내지 않는다.
+.git
+.env
+.env.*
+# 로컬 설치 결과와 Python 캐시를 제외한다.
+.venv
+__pycache__
+*.py[cod]
+node_modules
+# 실행에 사용하지 않는 문서를 제외한다.
+README.md
